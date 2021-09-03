@@ -6,15 +6,34 @@
     url("../fonts/oswald-light.woff2"), 
     url("../fonts/oswald-light.svg");
 }
+[class^="ti-"], [class*=" ti-"] {
+	font-family: 'themify';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-
-@font-face{
-    font-family: "icons";
-    src: url("../fonts/themify-icons/fonts/themify.ttf"), 
-    url("../fonts/themify-icons/fonts/themify.eot"), 
-    url("../fonts/themify-icons/fonts/themify.woff"), 
-    url("../fonts/themify-icons/fonts/themify.svg");     
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
+
+
+@font-face {
+	font-family: 'themify';
+    /*../font/fonts/themify.eot?-fvbane*/
+	src:url('../fonts/fonts/themify.eot?-fvbane');
+	src:url('../fonts/fonts/themify.eot?#iefix-fvbane') format('embedded-opentype'),
+		url('../fonts/fonts/themify.woff?-fvbane') format('woff'),
+		url('../fonts/fonts/themify.ttf?-fvbane') format('truetype'),
+		url('../fonts/fonts/themify.svg?-fvbane#themify') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 *{
     font-family:"OswaldLight";
 }
@@ -218,6 +237,9 @@ section {
     margin: auto;
     
 }
+#seccion4{
+    height: auto;
+}
 
 .vid {
     position: relative;
@@ -260,4 +282,49 @@ header .container {
 #what-app:hover {
     color: green;
     border: solid 1px green;
+}
+footer{
+    height: auto;
+    width: 100%;
+    background-color: var(--fuerte);
+}
+.continer-footer{
+    display: flex;
+    margin-left: 50px;
+    
+}
+
+.continer-footer .div-footer{
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 150px;
+    width: 150px;
+}
+.div-footer a{
+    text-decoration: none;
+    color: var(--blnco);
+}
+.cursos{    
+    background-color: white;
+    width: 15%;
+    height: 170px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 50px 50px 50px 50px;    
+    background: transparent;
+    color: var(--fuerte);
+    cursor: pointer;
+    transition:all 500ms ease-out;
+}
+
+.cursos:hover{
+    border: 1px solid var(--suave);
+    color: var(--suave);
+    box-shadow: 0px 10px 15px var(--suave);
+}
+.strings{
+    
+    padding-left:10%;       
+    padding-top:10%;       
 }
