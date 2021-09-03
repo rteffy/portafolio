@@ -300,9 +300,17 @@ footer{
     height: 150px;
     width: 150px;
 }
+
 .div-footer a{
     text-decoration: none;
     color: var(--blnco);
+}
+.div-footer img{
+    visibility: hidden;
+    width: 90%;
+}
+.div-footer:hover >img{
+    visibility: visible;
 }
 .cursos{    
     background-color: white;
