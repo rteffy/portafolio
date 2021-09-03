@@ -1,0 +1,263 @@
+@font-face{
+    font-family: "OswaldLight";
+    src: url("../fonts/oswald-light.ttf"), 
+    url("../fonts/oswald-light.eot"), 
+    url("../fonts/oswald-light.woff"), 
+    url("../fonts/oswald-light.woff2"), 
+    url("../fonts/oswald-light.svg");
+}
+
+
+@font-face{
+    font-family: "icons";
+    src: url("../fonts/themify-icons/fonts/themify.ttf"), 
+    url("../fonts/themify-icons/fonts/themify.eot"), 
+    url("../fonts/themify-icons/fonts/themify.woff"), 
+    url("../fonts/themify-icons/fonts/themify.svg");     
+}
+*{
+    font-family:"OswaldLight";
+}
+:root{
+   --fuerte: #6a436d;
+   --suave: #d5b7eb;
+   --blnco: #ffffff;
+
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+section {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.parallax{
+    background-color: ·fff;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+}
+#seccion1{
+    background-image: url('../img/images.jpg.png');
+}
+
+
+#vid{
+    position: relative;    
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+.menu{
+    width: 100%;
+    height: 50px;    
+    background-color: var(--blnco);    
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-left: 50%;
+}
+.menu nav ul li{
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.menu nav ul li a {
+    text-decoration: none;
+    color: var(--fuerte);
+}
+.continer h1{
+    font-size: 50px;
+    position: absolute;    
+    margin-left: 25%;
+    margin-top: 10%;    
+}
+.continer p {
+    position: absolute;    
+    margin-left: 25%;
+    margin-top: 15%; 
+    
+}
+#seccion2{
+    background-color:var(--fuerte);
+    height: 500px;
+}
+
+#card-sobremi{
+    position: absolute;
+    margin-left: 30%;
+    width: 35%;     
+    margin-top: 30px;
+    background-color: rgba(255, 211, 255, 0);    
+    border-radius: 23% 8% !important;
+    border-color: var(--suave);
+    
+}
+#card-sobremi p{
+    color: var(--blnco);
+    text-align: justify;
+}
+
+#card-sobremi h5{
+    color: var(--blnco);
+    text-align: center;
+    
+}
+#seccion2 .card img{
+    width: 25%;
+    
+}
+.tecnologias{
+    width: 5% !important;
+    height: 5%;
+    filter: grayscale(60%);
+}
+
+#logos{
+    display: flex;
+
+}
+#logos img{
+    margin-left: 5%;
+    color:green; 
+    font:40px Impact;    
+    
+}
+.string{
+    float: left;
+    margin-left: 25px;
+}
+
+.tecnologias:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+#seccion3{
+    background-color: var(--suave);
+}
+#continer-proyectos{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+#titulo-proyectos{
+    text-align: center;
+    padding-top: 20px;
+    color: var(--blnco);
+}
+
+#continer-proyectos figure{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+#continer-proyectos figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+#continer-proyectos .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(124, 5, 100, 0.5);
+    transition:all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+
+}
+
+
+#continer-proyectos figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#continer-proyectos figure:hover >img{
+    transform: scale(1.3);
+}
+#continer-proyectos figure:hover > .capa h3{
+    margin-top:70px;
+    margin-bottom: 15px;
+}
+#continer-proyectos figure .capa h3{
+    color: var(--blnco);
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition:all 500ms ease-out;
+    margin-top: 30px;
+}
+#continer-proyectos figure .capa p{
+    color: var(--blnco);
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;    
+    margin: auto;
+    
+}
+
+.vid {
+    position: relative;
+    background-color: #000;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    color: var(--blnco);
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+header video {
+    position: absolute;    
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+#what-app{
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    color: white;
+    transition:all 500ms ease-out;
+}
+#what-app:hover {
+    color: green;
+    border: solid 1px green;
+}
