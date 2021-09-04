@@ -83,6 +83,17 @@ section {
     background-color: var(--blnco);    
 }
 
+.menu btn-menu{
+    visibility: hidden;
+}
+.menu label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
 .menu nav ul {
     display: flex;
     list-style: none;
@@ -305,6 +316,9 @@ footer{
     text-decoration: none;
     color: var(--blnco);
 }
+.div-footer a:hover{
+    color:var(--suave);
+}
 .div-footer img{
     visibility: hidden;
     width: 90%;
@@ -336,3 +350,148 @@ footer{
     padding-left:10%;       
     padding-top:10%;       
 }
+
+/*responsive */
+
+@media only screen and (max-width: 1220px) {
+    .cursos{    
+        
+        width: 15%;
+        height: 150px;        
+        transition:all 500ms ease-out;
+    }
+
+
+    .strings{
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #continer-proyectos{
+        flex-direction:column; 
+    }
+
+    #continer-proyectos figure .capa h3{
+        font-size: 16px;
+    }
+
+    .continer h1{        
+        margin-left: 15%;        
+    }
+
+    .continer-footer .div-footer{
+        margin-left: 30px;
+        width: 100px;
+    }
+  
+}
+
+@media only screen and (max-width: 668px) {
+    #seccion2{
+        background-color:var(--fuerte);
+        height: 500px;
+    }
+    
+    #card-sobremi{
+        position: absolute;
+        margin-left: 7%;
+        width: 80%;     
+        margin-top: 30px;
+        background-color: rgba(255, 211, 255, 0);    
+        border-radius: 23% 8% !important;
+        border-color: var(--suave);
+        
+    }
+    #card-sobremi p{
+        color: var(--blnco);
+        text-align: justify;
+    }
+    
+    #card-sobremi h5{
+        color: var(--blnco);
+        text-align: center;
+        
+    }
+    #seccion2 .card img{
+        width: 35%;
+        
+    }
+    .tecnologias{
+        width: 8% !important;
+        height: 8%;
+        
+    }
+
+    #continer-proyectos figure{        
+        height: 250px;
+        width: 300px;        
+    }
+    .cursos{
+        visibility: hidden;
+    }
+
+    .div-footer img{       
+        width: 100px
+    }
+
+  .menu{       
+       margin-bottom: 15%;
+       background: var(--fuerte);
+   }
+
+
+   .menu-into{
+        display: flex;
+        margin-top: 1%;
+        margin-left: -160%;    
+   }
+   .menu nav ul {
+    flex-direction: column;
+    justify-content: start;    
+    position: absolute;
+    background-color: var(--fuerte);
+    width: 108%;
+   }
+
+   .menu nav ul li a{
+       color: var(--blnco);
+   }
+   
+   .menu nav ul li:hover {
+       background-color: var(--blnco);
+       
+   }
+
+   .menu nav ul li:hover a{
+        color: var(--fuerte);
+   }
+
+   .menu label {
+       display: block;
+       background-color: var(--fuerte);
+       width: 100%;
+       padding-bottom: 5px;
+   }
+
+   .menu label img {
+    width: 30px;
+    height: 30px;       
+   }
+
+   #btn-menu:checked ~ .menu-into{
+       margin-left: -51%;
+       margin-top: 5%;
+       margin-bottom: 5%;
+   }
+
+   
+
+   .parallax{    
+    background-size: 1400px;
+   }
+}
+    
+
+   
+
